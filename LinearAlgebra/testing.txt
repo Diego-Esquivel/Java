@@ -1,0 +1,5 @@
+Define a matrix as a list and the first 2 numbers are the row, column. the size of the
+list is the product of the first two numbers + 2. the rest of the numbers are ordered
+row column. 
+
+Define multiplication as not defined when 
