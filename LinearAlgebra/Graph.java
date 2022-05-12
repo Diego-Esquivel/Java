@@ -77,8 +77,8 @@ public class Graph {
             values[1] = vertices.getRightSize(mo) + (isAdjacent(tn,mo) ? 1:0) + (isAdjacent(ky,mo)?1:0) + (isAdjacent(ga,mo)?1:0) + (isAdjacent(fl,mo)?1:0) + (isAdjacent(sc,mo)?1:0) + 2;
             values[2] = vertices.getRightSize(ky) + (isAdjacent(tn,ky) ? 1:0) + (isAdjacent(mo,ky)?1:0) + (isAdjacent(ga,ky)?1:0) + (isAdjacent(fl,ky)?1:0) + (isAdjacent(sc,ky)?1:0) + 2;
             values[3] = vertices.getRightSize(ga) + (isAdjacent(tn,ga) ? 1:0) + (isAdjacent(mo,ga)?1:0) + (isAdjacent(ky,ga)?1:0) + (isAdjacent(fl,ga)?1:0) + (isAdjacent(sc,ga)?1:0) + 2;
-            values[4] = vertices.getRightSize(fl) + (isAdjacent(tn,fl) ? 1:0) + (isAdjacent(mo,fl)?1:0) + (isAdjacent(ky,fl)?1:0) + (isAdjacent(ga,fl)?1:0) + (isAdjacent(ga,sc)?1:0) + 2;
-            values[5] = vertices.getRightSize(sc) + (isAdjacent(tn,sc) ? 1:0) + (isAdjacent(mo,sc)?1:0) + (isAdjacent(ky,sc)?1:0) + (isAdjacent(ga,sc)?1:0) + (isAdjacent(fl,tn)?1:0) + 2;
+            values[4] = vertices.getRightSize(fl) + (isAdjacent(tn,fl) ? 1:0) + (isAdjacent(mo,fl)?1:0) + (isAdjacent(ky,fl)?1:0) + (isAdjacent(ga,fl)?1:0) + (isAdjacent(sc,fl)?1:0) + 2;
+            values[5] = vertices.getRightSize(sc) + (isAdjacent(tn,sc) ? 1:0) + (isAdjacent(mo,sc)?1:0) + (isAdjacent(ky,sc)?1:0) + (isAdjacent(ga,sc)?1:0) + (isAdjacent(fl,sc)?1:0) + 2;
             matrix.setDiagonal(values[0], values[1], values[2], values[3], values[4],values[5]);
             values[0] = -1 * ((isAdjacent(tn,mo) ? 1:0) + (isAdjacent(mo,tn) ? 1:0));
             values[1] = -1 * ((isAdjacent(mo,ky) ? 1:0) + (isAdjacent(ky,mo) ? 1:0));
@@ -124,8 +124,8 @@ public class Graph {
             values[1] = vertices.getRightSize(mo) + (isAdjacent(tn,mo) ? 1:0) + (isAdjacent(ky,mo)?1:0) + (isAdjacent(ga,mo)?1:0) + (isAdjacent(fl,mo)?1:0) + (isAdjacent(sc,mo)?1:0);
             values[2] = vertices.getRightSize(ky) + (isAdjacent(tn,ky) ? 1:0) + (isAdjacent(mo,ky)?1:0) + (isAdjacent(ga,ky)?1:0) + (isAdjacent(fl,ky)?1:0) + (isAdjacent(sc,ky)?1:0);
             values[3] = vertices.getRightSize(ga) + (isAdjacent(tn,ga) ? 1:0) + (isAdjacent(mo,ga)?1:0) + (isAdjacent(ky,ga)?1:0) + (isAdjacent(fl,ga)?1:0) + (isAdjacent(sc,ga)?1:0);
-            values[4] = vertices.getRightSize(fl) + (isAdjacent(tn,fl) ? 1:0) + (isAdjacent(mo,fl)?1:0) + (isAdjacent(ky,fl)?1:0) + (isAdjacent(ga,fl)?1:0) + (isAdjacent(ga,sc)?1:0);
-            values[5] = vertices.getRightSize(sc) + (isAdjacent(tn,sc) ? 1:0) + (isAdjacent(mo,sc)?1:0) + (isAdjacent(ky,sc)?1:0) + (isAdjacent(ga,sc)?1:0) + (isAdjacent(fl,tn)?1:0);
+            values[4] = vertices.getRightSize(fl) + (isAdjacent(tn,fl) ? 1:0) + (isAdjacent(mo,fl)?1:0) + (isAdjacent(ky,fl)?1:0) + (isAdjacent(ga,fl)?1:0) + (isAdjacent(sc,fl)?1:0);
+            values[5] = vertices.getRightSize(sc) + (isAdjacent(tn,sc) ? 1:0) + (isAdjacent(mo,sc)?1:0) + (isAdjacent(ky,sc)?1:0) + (isAdjacent(ga,sc)?1:0) + (isAdjacent(fl,sc)?1:0);
             matrix.setDiagonal(values[0], values[1], values[2], values[3], values[4],values[5]);
             values[0] = -1 * ((isAdjacent(tn,mo) ? 1:0) + (isAdjacent(mo,tn) ? 1:0));
             values[1] = -1 * ((isAdjacent(mo,ky) ? 1:0) + (isAdjacent(ky,mo) ? 1:0));
